@@ -9,7 +9,6 @@ import time
 import os
 
 class MyClient(discord.Client):
-
     @client.event
     async def on_message(self, message):
         msg = message.content
