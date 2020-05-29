@@ -73,6 +73,7 @@ class MyClient(discord.Client):
             except:
                 emb = discord.Embed(title = 'Что-то пошло не так :( \n Попробуй другое слово', colour = 0xAD2049)
                 await channel.send(embed = emb)
+                
         elif msg in help_list:
             emb = discord.Embed(title = 'Возможные команды', colour = 0xAD2049)
             emb.add_field( name = '.help / .info / .инфо / .хелп', value = 'Показать возможные команды')
