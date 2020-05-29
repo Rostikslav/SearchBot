@@ -81,5 +81,7 @@ class MyClient(discord.Client):
             await channel.send(embed = emb)
 
 client = MyClient()
+
 token = os.environ.get('BOT_TOKEN')
+
 client.run(str(token))
